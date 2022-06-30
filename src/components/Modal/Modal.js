@@ -43,11 +43,7 @@ function Modal({ children, onClose }) {
 
   return (
     <div className={s.overlay} onClick={handleBackdropClick}>
-      <div className={s.modal}>
-        
-        {children}
-        
-        </div>
+      <div className={s.modal}>{children}</div>
     </div>
   );
 }

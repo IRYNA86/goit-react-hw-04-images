@@ -118,11 +118,9 @@ function App() {
   //   }));
   // };
 
-  const openImage = () => {
+  const openImage = bigImage => {
     toggleModal();
     setBigImage(bigImage);
-    console.log(setBigImage())
-    
   };
 
   // openImage = event => {
@@ -174,10 +172,8 @@ function App() {
       )}
       <ToastContainer position="top-right" autoClose={3000} />
       {showModal && (
-        <Modal onClose={toggleModal}
-        
-        >
-                   <img src={bigImage} alt=""/>
+        <Modal onClose={toggleModal}>
+          <img src={bigImage} alt="" />
         </Modal>
       )}
       {totalHits !== sumHits && images.length > 0 && (

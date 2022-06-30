@@ -22,13 +22,13 @@ function ImageGalleryItem({ images, onClick }) {
 }
 
 ImageGalleryItem.propTypes = {
-    images: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        webformatURL: PropTypes.string.isRequired,
-        })
-    ),
-    onClick: PropTypes.func.isRequired,
-  };
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      webformatURL: PropTypes.string.isRequired,
+    })
+  ),
+  onClick: PropTypes.func.isRequired,
+};
 
 export default ImageGalleryItem;
